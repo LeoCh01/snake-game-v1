@@ -71,20 +71,8 @@ def game():
     pygame.draw.circle(screen, (0, 0, 0), (snk.x * block + snk.pupil[2], snk.y * block + snk.pupil[3]), block // 7)
 
     if snk.death:
-        # gameOverOverlay = pygame.Surface((scr, scr), pygame.SRCALPHA)
-        # gameOverOverlay.fill((0, 0, 0, 100))
-        # font = pygame.font.SysFont('Arial', scr//10, bold=True)
-        # score = font.render('Score: ' + str(snk.length), False, (225, 225, 225))
-        # screen.blit(gameOverOverlay, (0, 0))
-        # screen.blit(score, (scr//2 - score.get_width()//2, scr//2 - score.get_height()//2))
         scoreboard(snk.length)
         run += 1
-        # print('[' + str(run) + ']\tscore: ' + str(snk.length))
-        # snk.snakepos = snk.snakepos[::-1]
-        # snk.board[snk.snakepos[0][1]][snk.snakepos[0][0]] = 'H'
-        # snk.board[snk.snakepos[1][1]][snk.snakepos[1][0]] = 'h'
-        # snk.board[snk.snakepos[2][1]][snk.snakepos[2][0]] = 'h'
-        # print('\n'.join(['\t'.join([str(i) for i in j]) for j in snk.board]), '\n')
         snk.reset()
 
     font = pygame.font.SysFont('Arial', scr // 20, bold=True)
