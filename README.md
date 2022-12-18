@@ -6,6 +6,7 @@ I made a bot to play the game, where it just tries to go to the direction of the
 If there's an obstacle in front it will turn and try to avoid it.
 
 In addition, there is a scoreboard and an attempt counter to check how good this algorithm is (not good).
+Works alot better when the board is big however (video below).
 In the future I may use a different algorithm to play the game.
 
 
